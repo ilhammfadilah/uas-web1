@@ -1,0 +1,475 @@
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url('../ubuntu/Ubuntu-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url('../ubuntu/Ubuntu-Bold.ttf'); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+html, body{
+    width: 100%;
+    /* min-height: 100vh; */
+    font-family: Ubuntu-Regular;
+}
+.white{
+  color: white;
+}
+
+/* header */
+header {
+    /* position: fixed; */
+    width: 100%;
+    height: 80px;
+    background: #086972;
+    padding: 0px 150px;
+    z-index: 999;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+  }
+  header .img-logo{
+    width: 50px;
+  }
+  header .nama-logo{
+    margin-left: 10px;
+  }
+  header .nama-logo a{
+    text-decoration: none;
+    color: #fff;
+  }
+  header nav {
+    /* margin-left: 90px; */
+    display: flex;
+    overflow: hidden;
+  }
+  header nav li{
+      display: flex;
+      margin-left: 25px;
+      /* justify-content: center; */
+      align-items: center;
+      list-style: none;
+  }
+  header nav li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+  }
+  header nav li a:hover {
+    color:rgb(104, 97, 97);
+  }
+  header nav li:not(:first-child) {
+    margin-left: 12px;
+  }
+  header span {
+    font-weight: bold;
+    color: #ececec;
+    z-index: 1000;
+  }
+  header nav li .joinnow  {
+    margin-left: 400px;
+  }
+  header .menu-toggle {
+    display: none;
+  }
+
+  /* hero */
+  section .hero-wrapper{
+    width: 100%;
+    height: 500px;
+    background: url('../gambar/university.webp');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .hero-wrapper:after{
+    background: rgba(0,0,0,0.1);
+  }
+  section .hero-wrapper .hero{
+    position: absolute;
+    /* top: 100px; */
+    width: 600px;
+    height: 300px;
+    background: #01a9b4;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  section .hero-wrapper .heroimage{
+    height: 500px;
+    width: 100%;
+  }
+  section .hero-wrapper .hero img{
+    width: 150px;
+    margin-top: 20px;
+  }
+  section .hero-wrapper .hero p{
+    margin-top: 20px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  section .hero-wrapper .hero button{
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    height: 30px;
+    width: 140px;
+    background-color: #677fee;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  /* typing */
+  section .hero-wrapper .typing{
+    color: #fff;
+    position: relative;
+    left: 160px;
+    top: 150px;
+  }
+  section .hero-wrapper #myTypewriter h1{
+    font-size: 32px;
+  }
+
+  section .feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .feature-wrapper1{
+    background: url('../gambar/code.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+  section .feature-wrapper2{
+    background: url('../gambar/design.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+  section .feature-wrapper3{
+    background: url('../gambar/coffee.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+  section .feature-wrapper p{
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+  }
+  /* activity */
+  section .activity-wrap{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  section .activity-wrap .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  section .activity-wrap .card h4{
+    margin: 10px;
+  }
+  section .activity-wrap .card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  /* section member */
+  #member{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    /* background: #d6efc7; */
+  }
+  section .mkami{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 200px;
+  }
+
+  section .mkami .mslide{
+    height: 200px;
+    width: 200px;
+    background: #aaa;
+    margin: 10px;
+  }
+  section .mkami img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* section lokasi */
+  section .lokasi-wrap{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    /* background: #eebb4d; */
+    display: flex;
+    justify-content: center;
+  }
+  section #lokasinya{
+    width: 600px;
+    height: 300px;
+  }
+  /* footer */
+  section .footer-wrap{
+    background: #086972;
+    display: flex;
+    justify-content: center;
+  }
+  section .footer-wrap ul{
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  section .footer-wrap ul a{
+    text-decoration: none;
+    color: #677fee;
+  }
+
+/* Content Section */
+
+.content{
+  height: 200px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.content-header{
+  text-align: center;
+  margin-top: 20px;
+}
+.content .content-wrapper{
+  position: relative;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+.content .content-wrapper .contentevent{
+  margin: 10px;
+  height: 260px;
+  width: 240px;
+  background: #aaa;
+}
+.content .content-wrapper img{
+  width: 200px;
+  height: 160px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.content .content-wrapper .contentevent > h1, p{
+  margin: 10px;
+}
+/* saya */
+.saya{
+  border-radius: 50%;
+}
+/* konten */
+.konten-wrap{
+  position: static;
+  height: 800px;
+  width: 800px;
+  background: #001;
+  padding: 50px;
+}
+.konten{
+  padding: 20px;
+  margin-left: 90px;
+  background: #aaa;
+  height: 700px;
+  width: 600px;
+}
+
+.follow{
+  position: static;
+  width: 200px;
+  height: 400px;
+  background: #222;
+}
+
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.side{
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main{
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: #fff;
+  padding: 50px;
+}
+.mian h1{
+  margin-bottom: 20px;
+}
+.main ul li{
+  margin-left: 50px;
+}
+.fakeimg{
+  /* background-color: #c4c4c4; */
+  width: auto;
+  padding: 10px;
+}
+/* hero wrapper gabung */
+.hero-wrapper-gabung{
+    width: 100%;
+    height: 500px;
+    background: url('../gambar/university.webp');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-wrapper-gabung:after{
+    background: rgba(0,0,0,0.1);
+  }
+  .hero-wrapper-gabung .hero-gabung{
+    position: absolute;
+    /* top: 100px; */
+    width: 800px;
+    height: 400px;
+    background: #01a9b4;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* responsive */
+  @media (max-width: 800px) {
+    header{
+      display: flex;
+      justify-content: space-between;
+    }
+    header nav li{
+      margin-left: 0;
+    }
+    header nav li .joinnow{
+      margin-left: 0;
+    }
+    header .menu-toggle {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .menu-toggle .one {
+      display: block;
+      width: 8px;
+      height: 2px;
+      background: white;
+      transition: width 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    nav.active ~ .menu-toggle .one {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: white;
+    }
+    .menu-toggle .two {
+      margin-top: 4px;
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: white;
+      transition: width 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    nav.active ~ .menu-toggle .two {
+      margin-top: 4px;
+      display: block;
+      width: 8px;
+      height: 2px;
+      background: white;
+    }
+    header {
+      padding: 0px 80px;
+    }
+    header nav {
+      display: flex;
+      flex-direction: column;
+      background:#086972;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      top: 0px;
+      left: 0;
+      font-size: 2em;
+      width: 100%;
+      height: 0;
+      transition: height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    header nav li:not(:first-child) {
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    header nav.active {
+      height: 100vh;
+    }
+    section .hero-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section .hero-wrapper .hero{
+      position: static;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section .hero-wrapper .heroimage{
+      display: none;
+    }
+
+  }
+
+  /* responsive 400 */
+  @media (max-width: 480px){
+    section .activity-wrap{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0px;
+    }
+  }
